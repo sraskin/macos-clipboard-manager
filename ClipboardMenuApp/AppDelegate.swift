@@ -27,14 +27,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Hide the Dock icon
         NSApp.setActivationPolicy(.accessory)
 
-        // Add local event monitor to close popover when clicking outside
-        eventMonitor = NSEvent.addLocalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
-            if let popover = self?.popover, popover.isShown {
-                popover.performClose(event)
-            }
-            return event
-        }
-
         // Create the status menu
         statusMenu = NSMenu()
 

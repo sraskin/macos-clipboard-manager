@@ -24,7 +24,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     ForEach(Array(clipboardManager.copiedTexts.enumerated()), id: \.offset) { index, text in
                         VStack(alignment: .leading, spacing: 0) {
-                            Text(text.count > 40 ? "\(text.prefix(50))..." : text)
+                            Text(text.count > 50 ? "\(text.prefix(50))..." : text)
                                 .font(.system(size: 12))
                                 .padding(.horizontal, 10)
                                 .padding(.vertical, 5)
