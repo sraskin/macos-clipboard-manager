@@ -1,0 +1,41 @@
+# Xcode
+.DS_Store
+build/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Code Coverage
+*.xccoverage
+.coverage/
+coverage/
+DerivedData/
+
+# AppCode
+.idea/
+*.iml
+
+# SPM
+.swiftpm/xcode/xcshareddata/swiftpm/
+
